@@ -1,0 +1,54 @@
+/* Universal Styles */
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+/* Header */
+
+header {
+  margin-top: 1rem;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  height: 1.5rem;
+}
+
+span {
+  font-size: 1rem;
+  color: white;
+}
+
+/* Feature Image */
+
+.Banner {
+  background-image: url("../images/glasses-bg.png");
+  height: 30rem;
+  background-size: cover;
+}
+
+h1 {
+  background-color: white;
+  color: black;
+  margin-top: 9rem;
+}
+
+/* Services */
+
+/* Philosophy */
+
+/* Appointments */
+
+/* Footer */
+
+/* Media Queries */
