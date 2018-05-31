@@ -7,10 +7,19 @@ body {
   font-family: Helvetica;
 }
 
-/* Header */
+.SiteContainer {
+  height: 17rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-position: 20%;
+}
 
-header {
-  margin-top: 1rem;
+/* Header and Feature Image */
+
+.MobileNavbar {
   background-color: cadetblue;
   display: flex;
   justify-content: space-around;
@@ -29,18 +38,19 @@ span {
   color: white;
 }
 
-/* Feature Image */
-
-.Banner {
-  background-image: url("../images/glasses-bg.png");
-  height: 30rem;
-  background-size: cover;
-}
-
-h1 {
+.Catchphrase {
+  font-size: 1rem;
+  font-weight: bold;
   background-color: white;
   color: black;
-  margin-top: 9rem;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  top: 9rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 /* Services */
