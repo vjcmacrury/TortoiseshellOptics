@@ -104,6 +104,8 @@ section {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .Text {
@@ -177,7 +179,7 @@ footer img {
 
 }
 
-@media only screen and (min-width: 470px) and (max-width: 1024px) {
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
 
   .SiteContainer {
     height: 22rem;
@@ -245,16 +247,92 @@ footer img {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 
-  .MobileNavbar {
-    display: none;
-  }
+    .SiteContainer {
+      height: 30rem;
+      background-image: url("../images/glasses-bg.png");
+      background-size: cover;
+      background-position: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      margin: 0;
+      padding: 0;
+    }
 
-  .FullNavbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+    .MobileNavbar {
+      display: none;
+    }
+
+    .FullNavbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .Catchphrase {
+      font-size: 2rem;
+      font-weight: bold;
+      background-color: white;
+      color: black;
+      text-transform: uppercase;
+      padding: 1.5rem 5rem;
+      width: auto;
+      margin-right: 2rem;
+      position: absolute;
+      top: 8rem;
+    }
+
+    .Services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+
+    .Ruler {
+      padding-bottom: 1.5rem;
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
+    .Truck {
+      padding-bottom: 0.5rem;
+    }
+
+    .Info {
+      font-size: 1rem;
+    }
+
+    .MoreInfo {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin: auto;
+    }
+
+    .FullText {
+      width: 35%;
+    }
+
+    .Heading {
+      display: flex;
+      width: 10rem;
+      padding-left: 1.25rem;
+    }
+
+    .FullNavbar,
+    .Services,
+    .MoreInfo,
+    footer {
+      width: 960px;
+    }
+
+    footer {
+      margin: auto;
+    }
 
 }
