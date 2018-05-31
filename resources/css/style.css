@@ -1,39 +1,50 @@
 /* Universal Styles */
+
 html {
   font-size: 18px;
+  height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: Helvetica;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
 }
 
-.SiteContainer {
-  height: 17rem;
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  background-image: url("../images/glasses-bg.png");
-  background-size: cover;
-  background-position: 20%;
+.Offers img {
+  margin-bottom: 1em;
 }
 
 /* Header and Feature Image */
 
-.MobileNavbar {
+.MobileNavbar,
+.FullNavbar {
   background-color: cadetblue;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
+  position: fixed;
+  z-index: 1;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  color: white;
+  padding: 2rem 1rem;
 }
 
 .logo {
   height: 1.5rem;
 }
 
-span {
+.Mobile li {
   font-size: 1rem;
   color: white;
 }
@@ -46,11 +57,10 @@ span {
   text-transform: uppercase;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  position: relative;
-  top: 9rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 12rem;
 }
 
 /* Services */
@@ -58,6 +68,7 @@ span {
 .Services {
   position: relative;
   top: 3.77rem;
+  margin-bottom: 2.23rem;
 }
 
 .Offers {
@@ -67,18 +78,183 @@ span {
   align-items: center;
 }
 
-.Offers img {
+.One {
   width: 3.5rem;
 }
 
-.Offers p {
-  font-size: 0.77rem;
+.Both {
+  width: 5rem;
+}
+
+.Info {
   margin-bottom: 1.54rem;
 }
-/* Philosophy */
 
-/* Appointments */
+/* Philosophy and Appointments */
+
+section {
+  position: relative;
+  top: 3.77rem;
+}
+
+.Heading {
+  color: white;
+  background-color: cadetblue;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.Text {
+  margin-bottom: 4rem;
+}
 
 /* Footer */
 
+footer {
+  position: relative;
+  top: 5rem;
+  background-color: azure;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+.Copyright {
+  color: black;
+}
+
 /* Media Queries */
+
+@media only screen and (max-width: 470px) {
+
+  .SiteContainer {
+    height: 17rem;
+    background-image: url("../images/glasses-bg.png");
+    background-size: cover;
+    background-position: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+  }
+
+  .FullNavbar {
+    display: none;
+  }
+
+  .MobileNavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Banner {
+    width: 100%;
+  }
+
+
+  .Info {
+    font-size: 0.77rem;
+  }
+
+  .Copyright {
+    display: none;
+  }
+
+  footer img {
+    margin: auto;
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (min-width: 470px) and (max-width: 1024px) {
+
+  .SiteContainer {
+    height: 22rem;
+    background-image: url("../images/glasses-bg.png");
+    background-size: cover;
+    background-position: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+  }
+
+  .MobileNavbar {
+    display: none;
+  }
+
+  .FullNavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Catchphrase {
+    font-size: 1.33rem;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    padding: 1.75rem 4rem;
+    width: auto;
+    margin-right: 2rem;
+    position: absolute;
+    top: 8rem;
+  }
+
+  .Services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Ruler {
+    padding-bottom: 1.5rem;
+  }
+
+  .Truck {
+    padding-bottom: 0.5rem;
+  }
+
+  .Info {
+    font-size: 1rem;
+  }
+
+  .MoreInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .FullText {
+    width: 35%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .MobileNavbar {
+    display: none;
+  }
+
+  .FullNavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}

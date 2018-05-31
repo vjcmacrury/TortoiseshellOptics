@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tortoiseshell Optics</title>
+    <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
   </head>
   <body>
@@ -13,12 +14,22 @@
       <header>
 
         <div class="SiteContainer">
-          <div class="MobileNavbar">
+
+          <nav class="MobileNavbar">
             <img class="logo" src="./resources/images/logo-white.png" alt="White Logo">
-            <nav class="Mobile">
-              <span>Menu</span>
-            </nav>
-          </div>
+            <ul class="Mobile">
+              <li>Menu</li>
+            </ul>
+          </nav>
+
+          <nav class="FullNavbar">
+            <img class="logo" src="./resources/images/logo-white.png" alt="White Logo">
+              <ul class="Full">
+                <li>Services</li>
+                <li>Product</li>
+                <li>Contact</li>
+              </ul>
+          </nav>
 
           <div class="Banner">
             <span class="Catchphrase">Don't just look, see.</span>
@@ -32,40 +43,41 @@
       <section class="Services">
 
         <div class="Offers">
-          <img src="./resources/images/paper-icon.png" alt="Paper">
-          <p>Comprehensive Exams</p>
+          <img class="One" src="./resources/images/paper-icon.png" alt="Paper">
+          <p class="Info">Comprehensive Exams</p>
         </div>
 
         <div class="Offers">
-          <img src="./resources/images/ruler-icon.png" alt="Ruler">
-          <p>Custom Fittings</p>
+          <img class="Both Ruler" src="./resources/images/ruler-icon.png" alt="Ruler">
+          <p class="Info">Custom Fittings</p>
         </div>
 
         <div class="Offers">
-          <img src="./resources/images/truck-icon.png" alt="Truck">
-          <p>Fast Delivery</p>
+          <img class="Both Truck" src="./resources/images/truck-icon.png" alt="Truck">
+          <p class="Info">Fast Delivery</p>
         </div>
 
       </section>
 
-      <!-- Philosophy -->
+      <!-- Philosophy and Appointments-->
 
-      <section class-"Heading">
-        <h2>Philosophy</h2>
-        <p>Over 75% of our brains are dedicated to one sense: vision. We believe everyone deserves to see the world, not matter what. That’s why we offer eye exams, custom fittings, and quick delivery at a low cost. It’s your vision that makes ours.</p>
-      </section>
+      <section class="MoreInfo">
+        <div class="Text FullText">
+          <h2 class="Heading">Philosophy</h2>
+          <p class="Info">Over 75% of our brains are dedicated to one sense: vision. We believe everyone deserves to see the world, not matter what. That’s why we offer eye exams, custom fittings, and quick delivery at a low cost. It’s your vision that makes ours.</p>
+        </div>
 
-      <!-- Appointments -->
-
-      <section class="Heading">
-        <h2>Appointments</h2>
-        <p>Schedule an appointment by calling us at (312) 654-0987. We’re open Tuesday - Saturday, 9AM - 6PM.</p>
+        <div class="Text FullText">
+          <h2 class="Heading">Appointments</h2>
+          <p class="Info">Schedule an appointment by calling us at (312) 654-0987. We’re open Tuesday - Saturday, 9AM - 6PM.</p>
+        </div>
       </section>
 
       <!-- Footer -->
 
       <footer>
         <img src="./resources/images/logo-black.png" alt="Black Logo">
+        <span class="Copyright">Copyright Tortoiseshell Optics</span>
       </footer>
 
     </article>
