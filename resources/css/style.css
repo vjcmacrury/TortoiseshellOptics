@@ -55,6 +55,26 @@ span {
 
 /* Services */
 
+.Services {
+  position: relative;
+  top: 3.77rem;
+}
+
+.Offers {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Offers img {
+  width: 3.5rem;
+}
+
+.Offers p {
+  font-size: 0.77rem;
+  margin-bottom: 1.54rem;
+}
 /* Philosophy */
 
 /* Appointments */
